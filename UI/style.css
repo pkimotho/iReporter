@@ -34,6 +34,11 @@ ul li a {
     font-size: 20px;
 }
 
+p a {
+    color: #fff;
+    font-weight: bold;
+}
+
 .toggle {
     width: 100%;
     padding: 10px 20px;
