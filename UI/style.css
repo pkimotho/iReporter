@@ -1,10 +1,23 @@
+:root {
+    --color-primary: #292F34;
+    --color-blue-light: #8ED1D1;
+    --color-blue-dark: #47BFBE;
+    --color-blue-light-8: rgba(142, 209, 209, 0.8);
+    --color-blue-dark-8: rgba(71, 191, 191, 0.8);
+    --color-orange-light: #EADFD0;
+    --color-orange-dark: #FA533C;
+}
+
 body {
-    background: url('img/background.jpg')
+    background: linear-gradient(to right, var(--color-blue-dark-8), var(--color-blue-light-8)), url('img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav {
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: #292F34;
     opacity: 0.9;
 }
 
@@ -21,14 +34,14 @@ ul li {
 }
 
 ul li:hover {
-    background: #e91e63;
+    background: #FA533C;
 }
 
 ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 p a {
@@ -39,7 +52,7 @@ p a {
 .toggle {
     width: 100%;
     padding: 10px 20px;
-    background: #001f44;
+    background: #292F34;
     text-align: right;
     box-sizing: border-box;
     color: #fff;
@@ -67,7 +80,7 @@ p a {
     max-width: 350px;
     border-radius: 20px;
     margin: auto;
-    background: rgba(0, 0, 0, 0.8);
+    background: #292F34;
     box-sizing: border-box;
     padding: 40px;
     color: #fff;
@@ -84,7 +97,7 @@ input[type=password] {
     width: 100%;
     box-sizing: border-box;
     padding: 12px 5px;
-    background: rgba(0, 0, 0, 0.10);
+    background: #292F34;
     border: none;
     border-bottom: 1px dotted #fff;
     color: #fff;
@@ -100,7 +113,7 @@ input[type=submit] {
     margin-top: 30px;
     outline: none;
     border: none;
-    background: #60adde;
+    background: #FA533C;
     opacity: 0.7;
     border-radius: 20px;
     font-size: 20px;
@@ -109,7 +122,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background: #003366;
+    background: #8ED1D1;
     opacity: 0.7;
     cursor: pointer;
 }
