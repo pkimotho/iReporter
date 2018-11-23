@@ -225,3 +225,14 @@ textarea {
     height: 700px;
     background-color: #EADFD0
 }
+
+.sidebar ul li {
+    padding: 20px;
+    border-bottom: solid #292F34;
+    list-style: none;
+}
+
+.sidebar ul li:hover {
+    background-color: #EADFD0;
+    cursor: pointer;
+}
