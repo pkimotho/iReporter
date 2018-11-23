@@ -213,3 +213,15 @@ textarea {
 #flagform {
     width: 85%;
 }
+
+.sidebar {
+    width: 300px;
+    height: 400px;
+    background-color: #FA533C;
+    float: left;
+}
+
+.data {
+    height: 700px;
+    background-color: #EADFD0
+}
