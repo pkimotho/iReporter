@@ -1,0 +1,287 @@
+:root {
+    --color-primary: #292F34;
+    --color-blue-light: #8ED1D1;
+    --color-blue-dark: #47BFBE;
+    --color-blue-light-8: rgba(142, 209, 209, 0.8);
+    --color-blue-dark-8: rgba(71, 191, 191, 0.8);
+    --color-orange-light: #EADFD0;
+    --color-orange-dark: #FA533C;
+}
+
+body {
+    background: linear-gradient(to right, var(--color-blue-dark-8), var(--color-blue-light-8)), url('img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 100%;
+    background: #292F34;
+    opacity: 0.9;
+}
+
+nav ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li:hover {
+    background: #FA533C;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header,
+footer {
+    background: #47BFBE;
+    color: #292F34;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    padding: 2em 0;
+    height: 2%;
+}
+
+.main-columns {
+    width: 99.75%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.col {
+    width: 33.333%;
+    height: 550px;
+    float: left;
+    text-align: center;
+}
+
+.col1 {
+    background: #8ED1D1;
+}
+
+.col2 {
+    background: #EADFD0;
+}
+
+.col3 {
+    background: #FA533C;
+}
+
+footer {
+    clear: both;
+}
+
+.wrap p a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: #292F34;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none
+}
+
+@media (max-width:768px) {
+    .toggle {
+        display: block;
+    }
+    ul {
+        width: 100%;
+        display: none;
+    }
+    ul li {
+        display: block;
+    }
+    .active {
+        display: block;
+    }
+    .col1,
+    .col2 {
+        width: 50%;
+    }
+    .col3 {
+        width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+    .col {
+        width: 100%;
+        float: none
+    }
+}
+
+.wrap {
+    max-width: 350px;
+    border-radius: 20px;
+    margin: auto;
+    background: #292F34;
+    box-sizing: border-box;
+    padding: 40px;
+    color: #fff;
+    margin-top: 100px;
+    opacity: 0.9;
+}
+
+.flag {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+.wrap input[type=text],
+.wrap input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: #292F34;
+    border: none;
+    border-bottom: 1px dotted #fff;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.wrap input[type=submit] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background: #FA533C;
+    opacity: 0.7;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.wrap input[type=submit]:hover {
+    background: #8ED1D1;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+label {
+    float: left;
+    width: 150px;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 12px;
+    clear: left;
+}
+
+.flag input,
+textarea {
+    width: 70%;
+    margin-top: 12px;
+    box-sizing: border-box;
+    background: #292F34;
+    padding: 12px 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    color: #fff
+}
+
+.flag input[type=submit] {
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background: #FA533C;
+    opacity: 0.9;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.flag input[type=file] {
+    background: none !important;
+    border: none !important;
+}
+
+.flag input[type=submit]:hover {
+    background: #292F34;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#formSubmit {
+    margin-left: 150px;
+    padding: 15px;
+}
+
+#flagform {
+    width: 85%;
+}
+
+.data {
+    height: 700px;
+    background-color: #EADFD0
+}
+
+table {
+    width: 100%;
+    height: 20%;
+    table-layout: auto;
+    padding: 20px;
+}
+
+#records th {
+    border: 0.5px solid #292F34;
+    padding: 9px;
+}
+
+#records th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #292F34;
+    color: #fff
+}
+
+#records select,
+#records button {
+    border: 1px solid rgb(204, 192, 176);
+    height: 30px;
+}
+
+table a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table a:hover {
+    background-color: #FA533C;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+}

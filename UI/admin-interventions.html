@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>iReporter-Admin Panel</title>
+</head>
+
+<body>
+    <nav>
+        <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+
+        </div>
+        <ul>
+            <li><a href="admin.html">Red Flags</a></li>
+            <li><a href="admin-interventions.html">Interventions</a></li>
+            <li id="logout"><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <header>
+        Admin Panel
+    </header>
+    <div class="data">
+        <table id="records">
+            <tr>
+                <th>Intervention ID</th>
+                <th>Date</th>
+                <th>Interventions</th>
+                <th>Location</th>
+                <th>Assign Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td><a href="admin-intervention.html">1</a></td>
+                <td>22/11/2018</td>
+                <td><a href="admin-intervention.html">Misappropriation of funds at Korapt public school</a></td>
+                <td>23.5, 15.9</td>
+                <td><select>
+                        <option>Select Status</option>
+                        <option>Under Investigation</option>
+                        <option>Resolved</option>
+                        <option>Rejected</option>
+                    </select>
+                </td>
+                <td><button>Assign</button></td>
+            </tr>
+            <tr>
+                <td><a href="admin-intervention.html">2</td>
+                <td>15/08/2018</td>
+                <td><a href="admin-intervention.html">Floods in Koibatek </a></td>
+                <td>40.5, 18.6</td>
+                <td><select>
+                        <option>Select Status</option>
+                        <option>Under Investigation</option>
+                        <option>Resolved</option>
+                        <option>Rejected</option>
+                    </select>
+                </td>
+                <td><button>Assign</button></td>
+            </tr>
+            <tr>
+                <td><a href="admin-intervention.html">3</td>
+                <td>21/10/2018</td>
+                <td><a href="admin-intervention.html">Tree planting in Mau</a></td>
+                <td>13.52, 23.69</td>
+                <td><select>
+                        <option>Select Status</option>
+                        <option>Under Investigation</option>
+                        <option>Resolved</option>
+                        <option>Rejected</option>
+                    </select>
+                </td>
+                <td><button>Assign</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.menu').click(function() {
+                $('ul').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+
+</html>
