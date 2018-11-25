@@ -242,35 +242,19 @@ textarea {
     width: 85%;
 }
 
-.sidebar {
-    width: 200px;
-    height: 400px;
-    background-color: #FA533C;
-    float: left;
-}
-
 .data {
-    height: 800px;
+    height: 700px;
     background-color: #EADFD0
 }
 
-.sidebar ul li {
-    padding: 20px;
-    border-bottom: solid #292F34;
-    list-style: none;
-}
-
-.sidebar ul li:hover {
-    background-color: #EADFD0;
-    cursor: pointer;
-}
-
 table {
-    width: 80%;
+    width: 100%;
     height: 20%;
     table-layout: auto;
+    padding: 20px;
 }
 
 td {
     padding: 5px;
+    text-align: center;
 }
