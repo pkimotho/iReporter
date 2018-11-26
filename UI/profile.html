@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>iReporter</title>
+    <title>iReporter-Admin Panel</title>
 </head>
 
 <body>
@@ -17,119 +17,59 @@
 
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Red Flags</a></li>
-            <li><a href="#">Interventions</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="admin.html">Red Flags</a></li>
+            <li><a href="admin-interventions.html">Interventions</a></li>
+            <li id="logout"><a href="#">Logout</a></li>
         </ul>
     </nav>
     <header>
         My Profile
+        <ul>
+            <li><a href="create-flag.html">Create New Red-flag</a></li>
+            <li><a href="create-intervention.html">Create New Intervention</a></li>
+        </ul>
     </header>
-    <div class="main-columns">
-        <div class="">
-            <div class="col col1">
-                <h2>User Details</h2>
-                <div class="userimage">
-                    <img src="./img/profile.jpg" alt="profile image" />
-                </div>
-                <div class="userdetails">
-                    <h4>Paul Kimotho</h4>
-                    <h5>Dedicated Citizen</h5>
-                    <p>My objective is to report any incidence of corruption to the relevant authorities as I look forward to having a corruption free country where all citizens will be treated equally.</p>
-                </div>
-            </div>
-            <div class="col col2">
-                <h2>My Red-flags</h2>
-                <h5>Number of Red-flags</h5>
-                <p>5</p>
-                <h2>Red-flags list</h2>
-                <table>
-                    <tr>
-                        <th>Red-Flag</th>
-                        <th>Status</th>
-                        <th>User Action</th>
-                    </tr>
-                    <tr>
-                        <td>Red Flag1</td>
-                        <td>Resolved</td>
-                        <td>None</td>
-                    </tr>
-                    <tr>
-                        <td>Red Flag2</td>
-                        <td>Under Investigation</td>
-                        <td>None</td>
-                    </tr>
-                    <tr>
-                        <td>Red Flag3</td>
-                        <td>Rejected</td>
-                        <td>None</td>
-                    </tr>
-                    <tr>
-                        <td>Red Flag4</td>
-                        <td>Unassigned</td>
-                        <td><a href="">Edit</a></td>
-                        <td><a href="">Update</a></td>
-                        <td><a href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>Red Flag5</td>
-                        <td>Unassigned</td>
-                        <td><a href="">Edit</a></td>
-                        <td><a href="">Update</a></td>
-                        <td><a href="">Delete</a></td>
-                    </tr>
-                </table>
-                <p><a href="#">Create a new Red Flag</a></p>
-            </div>
-            <div class="col col3">
-                <h2>My Interventions</h2>
-                <h5>Number of Interventions</h5>
-                <p>5</p>
-                <h2>Interventions list</h2>
-                <table>
-                    <tr>
-                        <th>Intervention</th>
-                        <th>Status</th>
-                        <th>User Action</th>
-                    </tr>
-                    <tr>
-                        <td>Intervention1</td>
-                        <td>Resolved</td>
-                        <td>None</td>
-                    </tr>
-                    <tr>
-                        <td>Intervention2</td>
-                        <td>Under Investigation</td>
-                        <td>None</td>
-                    </tr>
-                    <tr>
-                        <td>Intervention3</td>
-                        <td>Rejected</td>
-                        <td>None</td>
-                    </tr>
-                    <tr>
-                        <td>Intervention4</td>
-                        <td>Unassigned</td>
-                        <td><a href="">Edit</a></td>
-                        <td><a href="">Update</a></td>
-                        <td><a href="">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>Intervention5</td>
-                        <td>Unassigned</td>
-                        <td><a href="">Edit</a></td>
-                        <td><a href="">Update</a></td>
-                        <td><a href="">Delete</a></td>
-                    </tr>
-                </table>
-                <p><a href="#">Create a new Intervention</a></p>
-            </div>
-        </div>
+    <div class="data">
+        <table id="records">
+            <tr>
+                <th>Red-Flag ID</th>
+                <th>Date</th>
+                <th>Red Flags</th>
+                <th>Location</th>
+                <th>Assign Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td><a href="admin-redflag.html">2</td>
+                <td>15/08/2018</td>
+                <td><a href="admin-redflag.html">Bribery of public officials </a></td>
+                <td>40.5, 18.6</td>
+                <td><select name="" id="">
+                        <option>Select Status</option>
+                        <option>Under Investigation</option>
+                        <option>Resolved</option>
+                        <option>Rejected</option>
+                    </select>
+                </td>
+                <td><button>Assign</button></td>
+            </tr>
+            <tr>
+                <td><a href="admin-redflag.html">3</td>
+                <td>21/10/2018</td>
+                <td><a href="admin-redflag.html">Sale of public playground to a private developer</a></td>
+                <td>13.52, 23.69</td>
+                <td><select>
+                        <option>Select Status</option>
+                        <option>Under Investigation</option>
+                        <option>Resolved</option>
+                        <option>Rejected</option>
+                    </select>
+                </td>
+                <td><button>Assign</button></td>
+            </tr>
+        </table>
     </div>
-    <footer>
-        &copy; P. Kimotho 2018
-    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {

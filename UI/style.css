@@ -53,10 +53,25 @@ header,
 footer {
     background: #47BFBE;
     color: #292F34;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     text-align: center;
     padding: 2em 0;
     height: 2%;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .main-columns {
