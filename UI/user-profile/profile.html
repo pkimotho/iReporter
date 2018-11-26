@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>iReporter-My Profile</title>
+</head>
+
+<body>
+    <nav>
+        <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+
+        </div>
+        <ul>
+            <li><a href="profile.html">Home</a></li>
+            <li><a href="profile.html">Red Flags</a></li>
+            <li><a href="user-interventions.html">Interventions</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li id="logout"><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <header>
+        My Profile
+        <ul>
+            <li><a href="create-flag.html">Create New Red-flag</a></li>
+            <li><a href="create-intervention.html">Create New Intervention</a></li>
+        </ul>
+    </header>
+    <div class="data">
+        <table class="records" id="user">
+            <tr>
+                <th>Red-Flag ID</th>
+                <th>Date Created</th>
+                <th>Red Flags</th>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td><a href="user-redflag.html">1</td>
+                    <td>15/08/2018</td>
+                    <td><a href="user-redflag.html">Public hospital assets looted </a></td>
+                <td>40.5, 18.6</td>
+                <td>Unassigned</td>
+                <td><button id="edit"><a href="edit-redflag.html" >Edit</a></button></td>
+                <td><button id="delete">Delete</button></td>
+            </tr>
+
+            <tr>
+                <td><a href="user-redflag.html">2</td>
+                <td>15/08/2018</td>
+                <td><a href="user-redflag.html">Bribery of public officials </a></td>
+                <td>40.5, 18.6</td>
+                <td>Resolved</td>
+                <td><button id="edit" disabled><a href="edit-redflag.html" >Edit</a></button></td>
+                <td><button id="delete" disabled>Delete</button></td>
+            </tr>
+            <tr>
+                <td><a href="user-redflag.html">3</td>
+                <td>21/10/2018</td>
+                <td><a href="user-redflag.html">Sale of public playground to a private developer</a></td>
+                <td>13.52, 23.69</td>
+                <td>Under Investigation</td>
+                <td><button id="edit" disabled><a href="edit-redflag.html">Edit</a></button></td>
+                <td><button id="delete" disabled>Delete</button></td>
+            </tr>
+            <tr>
+                <td><a href="user-redflag.html">4</td>
+                    <td>15/08/2018</td>
+                    <td><a href="user-redflag.html">Soliciting for funds from recruits </a></td>
+                <td>40.5, 18.6</td>
+                <td>Unassigned</td>
+                <td><button id="edit"><a href="edit-redflag.html" >Edit</a></button></td>
+                <td><button id="delete">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.menu').click(function() {
+                $('ul').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+
+</html>

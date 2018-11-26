@@ -278,22 +278,30 @@ table {
     padding: 20px;
 }
 
-#records th {
+.records th {
     border: 0.5px solid #292F34;
     padding: 9px;
 }
 
-#records th {
+.records th {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #292F34;
     color: #fff
 }
 
-#records select,
-#records button {
+.records select,
+.records button {
     border: 1px solid rgb(204, 192, 176);
     height: 30px;
+}
+
+table td #edit {
+    background-color: #8ED1D1;
+}
+
+table td #delete {
+    background-color: #FA533C;
 }
 
 table a {
